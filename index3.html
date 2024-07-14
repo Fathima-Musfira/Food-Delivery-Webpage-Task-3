@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Food Delivery App</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <header>
+        <h1>Food Delivery App</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#order">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" aria-labelledby="home-heading">
+            <h2 id="home-heading">Welcome to Our Food Delivery App</h2>
+            <p>Discover delicious meals and order them easily through our app.</p>
+            <img src="home1.jpeg" alt="Delicious food" class="responsive">
+        </section>
+
+        <section id="menu" aria-labelledby="menu-heading">
+            <h2 id="menu-heading">Menu</h2>
+            <div class="menu-item">
+                <img src="pizza.jpeg" alt="Pizza" class="responsive">
+                <h3>Pizza</h3>
+                <p>Delicious pizza with fresh ingredients.</p>
+            </div>
+            <div class="menu-item">
+                <img src="burger.jpeg" alt="Burger" class="responsive">
+                <h3>Burgers</h3>
+                <p>Juicy burgers with various toppings.</p>
+            </div>
+            <div class="menu-item">
+                <img src="pasta.jpeg" alt="Pasta" class="responsive">
+                <h3>Pasta</h3>
+                <p>Italian pasta with rich sauces.</p>
+            </div>
+            <div class="menu-item">
+                <img src="sushi.jpeg" alt="Sushi" class="responsive">
+                <h3>Sushi</h3>
+                <p>Fresh sushi made with high-quality ingredients.</p>
+            </div>
+        </section>
+
+        <section id="order" aria-labelledby="order-heading">
+            <h2 id="order-heading">Place Your Order</h2>
+            <form id="orderForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="food">Food Chosen:</label>
+                <select id="food" name="food" required>
+                    <option value="" disabled selected>Select your food</option>
+                    <option value="pizza">Pizza</option>
+                    <option value="burger">Burger</option>
+                    <option value="pasta">Pasta</option>
+                    <option value="sushi">Sushi</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div id="orderMessage"></div>
+        </section>
+
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Us</h2>
+            <p>Learn more about our journey and commitment to providing the best food experience.</p>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
+            <p>Get in touch with us for any queries or feedback.</p>
+            <p>Email: foodwebsite@gmail.com</p>
+            <p>Phone: 9876543201</p>
+            <p>Instagram: food_web_28</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Food Delivery App. All rights reserved.</p>
+    </footer>
+
+    <script src="script3.js"></script>
+    
+</body>
+</html>
